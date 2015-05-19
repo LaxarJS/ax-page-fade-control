@@ -1,6 +1,6 @@
 # AxPageFadeControl
 
-> Adds a fade-transition on LaxarJS flow navigation events
+> Adds a fade-transition while a LaxarJS application is loading as well as during navigation.
 
 This shows a cover layer during the initial load, and on every navigation.
 The layer is shown/hidden using a fade animation.

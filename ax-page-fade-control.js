@@ -9,10 +9,6 @@ define( [
 ], function( ng, $ ) {
    'use strict';
 
-   var module = ng.module( 'axPageFade', [] );
-
-   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
    var directiveName = 'axPageFade';
    var directive = [ '$window', 'axGlobalEventBus', function( $window, eventBus ) {
       return function( scope, element ) {
