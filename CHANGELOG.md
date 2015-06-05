@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v1.0.0
+
 - [#1](https://github.com/LaxarJS/ax-page-fade-control/issues/1): updated LaxarJS dependency and added contribution information
 
 
