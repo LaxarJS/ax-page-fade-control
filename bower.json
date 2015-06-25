@@ -1,6 +1,6 @@
 {
    "name": "laxar-page-fade-control",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "Adds a fade-transition while a LaxarJS application is loading as well as during navigation.",
    "authors": [],
    "license": "MIT",
