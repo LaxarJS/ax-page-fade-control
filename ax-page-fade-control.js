@@ -12,14 +12,19 @@ define( [
    var directiveName = 'axPageFade';
    var directive = [ '$window', 'axGlobalEventBus', function( $window, eventBus ) {
       return function( scope, element ) {
+         var fadeOutTimeout = null;
          eventBus.subscribe( 'didNavigate', function() {
-            $window.setTimeout( function() {
+            fadeOutTimeout = $window.setTimeout( function() {
                $( element ).fadeOut( 'fast' );
             }, 100 );
          } );
 
          eventBus.subscribe( 'endLifecycleRequest', function() {
             element.css( 'display', 'block' );
+         } );
+
+         scope.$on( '$destroy', function() {
+            $window.clearTimeout( fadeOutTimeout );
          } );
       };
    } ];
