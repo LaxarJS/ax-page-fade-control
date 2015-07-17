@@ -16,7 +16,7 @@ For general information on installing, styling and optimizing controls, have a l
 Install the control:
 
 ```sh
-bower install laxarjs.ax-page-fade-control
+bower install laxar-page-fade-control
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ To make sure that the control is loaded by RequireJS, add its module as a depend
 require( [
    'laxar',
    'laxar-application-dependencies',
-   'laxarjs.ax-page-fade-control/ax-page-fade-control'
+   'laxar-page-fade-control/ax-page-fade-control'
    // , …
 ], function( ax, applicationModules, axPageFadeModule ) {
    'use strict';
@@ -49,3 +49,5 @@ require( [
    ax.bootstrap( applicationModules );
 } );
 ```
+
+Note that you may have to modify your RequireJS configuration if you are using a `baseUrl` other than `"bower_components"`.
