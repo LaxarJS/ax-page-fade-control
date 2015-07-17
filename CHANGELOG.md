@@ -2,6 +2,7 @@
 
 ## Last Changes
 
+- [#3](https://github.com/LaxarJS/ax-page-fade-control/issues/3): documentation: fixed installation instructions
 - [#2](https://github.com/LaxarJS/ax-page-fade-control/issues/2): clear timeout on destroy now
 
 
